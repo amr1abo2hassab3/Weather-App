@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather App</title>
+
+    <!-- link cdn font awesome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- link css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link media screen file -->
+    <link rel="stylesheet" href="./css/mediaScreen.css">
+</head>
+
+<body>
+
+    <div class="site-content">
+        <!-- start navbar  -->
+        <nav class="header">
+            <div class="container">
+                <div class="all_nav">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./images/logo.png" alt="">
+                            <div class="logo-type">
+                                <h1>weather</h1>
+                                <p>tagline goes here</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="icon-nav-links">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Live camera</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End navbar  -->
+        <!-- start form -->
+        <div class="form-site">
+            <div class="container">
+                <form id="locationForm">
+                    <input type="text" id="locationInput" placeholder="Find your location..." />
+                    <input type="button" value="Find">
+                </form>
+            </div>
+        </div>
+        <!-- End form -->
+        <!-- start table data -->
+        <div class="table-data">
+            <div class="container">
+                <div class="row-data">
+                    <div class="col">
+                        <div class="header-box">
+                            <p id="currentDay">Friday</p>
+                            <p id="currentDate">13 December</p>
+                        </div>
+                        <div class="content-box">
+                            <h2 id="cityName">Asdf</h2>
+                            <h3 id="currentTemp">24.8°C</h3>
+                            <img id="weatherIcon" src="./images/113.webp" alt="">
+                            <p id="currentCondition">Clear</p>
+                            <div class="bottom-box">
+                                <div>
+                                    <img src="./images/icon-umberella.png" alt="">
+                                    <span id="humidity">20%</span>
+                                </div>
+                                <div>
+                                    <img src="./images/icon-wind.png" alt="">
+                                    <span id="windSpeed">18km/h</span>
+                                </div>
+                                <div>
+                                    <img src="./images/icon-compass.png" alt="">
+                                    <span id="windDirection">East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-forecast">
+                        <div class="forecast-header">
+                            <h3 id="forecastDay1">Saturday</h3>
+                        </div>
+                        <div class="forecast-content">
+                            <div class="forecast-icon">
+                                <img id="forecastIcon1" src="./images/113 (1).webp" alt="">
+                            </div>
+                            <div class="degree" id="forecastTemp1">
+                                21.1<sup>o</sup>C
+                            </div>
+                            <p id="forecastMinTemp1">12.3<sup>o</sup></p>
+                            <div class="custom" id="forecastCondition1">Sunny</div>
+                        </div>
+                    </div>
+
+                    <div class="col col-forecast bg-content">
+                        <div class="forecast-header bg-header">
+                            <h3 id="forecastDay2">Sunday</h3>
+                        </div>
+                        <div class="forecast-content">
+                            <div class="forecast-icon">
+                                <img id="forecastIcon2" src="./images/113 (1).webp" alt="">
+                            </div>
+                            <div class="degree" id="forecastTemp2">
+                                21.1<sup>o</sup>C
+                            </div>
+                            <p id="forecastMinTemp2">12.3<sup>o</sup></p>
+                            <div class="custom" id="forecastCondition2">Sunny</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End table data -->
+        <!-- start footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row-footer">
+                    <div class="content-footer">
+                        <form action="" class="formFooter">
+                            <input type="text" placeholder="Enter your email to subscribe...">
+                            <input type="button" value="subscribe">
+                        </form>
+                        <div class="icon-footer">
+                            <div>
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-pinterest"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </p>
+            </div>
+        </div>
+        <!-- End footer -->
+    </div>
+
+    <!-- link main js file -->
+    <script src="./js/main.js">
+    </script>
+</body>
+
+</html>
